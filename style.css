@@ -1,0 +1,175 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap-reverse; */
+    width: 100%;
+    height: 80%;
+}
+.col-one {
+    width: calc(45%);
+    height: calc(100%);
+}
+.col-one img {
+    width: 100%;
+    height: 750px;
+}
+.col-two {
+    margin-left: 4%;
+    width: calc(65%);
+    height: calc(100%);
+}
+.col-two .logo img{
+    width: 8%;
+    height: 8%;
+    margin-top: 10%;
+}
+.heading h1 {
+    font-size: 62px;
+    font-weight: 1000;
+}
+.social-links h2 {
+    font-size: 32px;
+    font-weight: 800;
+}
+.social-links .google {
+    border: 1px solid rgb(219, 213, 213);
+    border-radius: 100px;
+    text-align: center;
+    padding: 2%;
+    width: 350px;
+}
+.social-links .google img {
+    width: 9%;
+    height: 9%;
+    margin-right: 2%;
+    vertical-align: middle;
+}
+.social-links .google a {
+    text-decoration: none;
+    color: rgb(78, 76, 76);
+    font-size: 13px;
+    font-weight: bold;
+}
+.google:hover {
+    background-color: rgba(216, 213, 213, 0.103);
+}
+.social-links .apple {
+    border: 1px solid rgb(219, 213, 213);
+    border-radius: 100px;
+    text-align: center;
+    padding: 2%;
+    width: 350px;
+    margin-top: 15px;
+}
+.social-links .apple img {
+    width: 7%;
+    height: 7%;
+    margin-right: 1%;
+    vertical-align: middle;
+    background-color: transparent;
+}
+.social-links .apple a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+.apple:hover {
+    background-color: rgba(207, 206, 206, 0.596);
+}
+.apple+p {
+    text-align: center;
+    width: 350px;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+.social-links .phone-email {
+    border: transparent;
+    background-color: rgb(0, 153, 255);
+    border-radius: 100px;
+    text-align: center;
+    padding: 2%;
+    width: 350px;
+}
+.social-links .phone-email a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+.phone-email:hover {
+    background-color: rgb(0, 102, 255);
+}
+.social-links .signing-up {
+    font-size: 11px;
+    color: grey;
+}
+.social-links .signing-up a {
+    text-decoration: none;
+    color: rgb(0, 153, 255);
+}
+.social-links .signing-up a:hover {
+    text-decoration: underline;
+}
+.sign-in-box h3 {
+    font-size: 16px;
+    margin-top: 80px;
+}
+.sign-in-box .sign-in-btn {
+    border: 1px solid rgb(219, 213, 213);
+    border-radius: 100px;
+    font-weight: bold;
+    color: rgb(9, 165, 238);
+    text-align: center;
+    padding: 2%;
+    width: 350px;
+    margin-bottom: 2%;
+}
+.sign-in-box a {
+    text-decoration: none;
+}
+.sign-in-btn:hover {
+    background-color: rgba(131, 178, 250, 0.144);
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 20%;
+    text-align: center;   
+}
+footer li {
+    padding: 1%;
+    display: inline;
+    text-decoration: none;
+    font-size: 13px;
+    color: grey;
+}
+footer li a {
+    text-decoration: none;
+    color: grey;
+}
+footer li a:hover {
+    text-decoration: underline;
+}
+@media screen and (max-width: 995px) {
+      .container {
+      flex-wrap: wrap-reverse;
+    }
+     .col-one img {
+         width: auto;
+     }   
+  }
+@media screen and (max-width: 650px) {
+    .heading h1 {
+    font-size: 34px;
+  }
+  .social-links h2 {
+      font-size: 22px;
+  } 
+}
